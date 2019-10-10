@@ -1,0 +1,6 @@
+module Pods_eRoom {
+  umbrella header "Pods-eRoom-umbrella.h"
+
+  export *
+  module * { export * }
+}

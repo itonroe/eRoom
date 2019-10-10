@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="85v-kU-3ZE">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoeuil.ttf">
+            <string>SegoeUI-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--new_Main_Questions-->
+        <scene sceneID="C0O-x7-Eff">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="questions" storyboardName="new_Main_Questions" id="VSw-0k-PLs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKd-rW-LbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="24"/>
+        </scene>
+        <!--Paths-->
+        <scene sceneID="Yha-De-4Ye">
+            <objects>
+                <viewController id="85v-kU-3ZE" customClass="Paths" customModule="eRoom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uKZ-ck-rSQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bkg_Top2_Short.png" translatesAutoresizingMaskIntoConstraints="NO" id="OAd-YN-U1m">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="91"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xsu-zI-8xS">
+                                <rect key="frame" x="157" y="34" width="100" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="yL7-KL-qRq"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mrq-9M-uVB">
+                                <rect key="frame" x="0.0" y="176" width="414" height="833"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKt-pz-bcb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="825"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkk-mO-Vev">
+                                                <rect key="frame" x="0.0" y="8" width="414" height="76"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.79525351519999998" alpha="1" colorSpace="deviceWhite"/>
+                                                <state key="normal" image="btn_Headache.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="headache_onClick:" destination="85v-kU-3ZE" eventType="touchUpInside" id="F3N-2l-pSy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1C-Oa-saK">
+                                                <rect key="frame" x="0.0" y="87" width="414" height="76"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.79525351519999998" alpha="1" colorSpace="deviceWhite"/>
+                                                <state key="normal" image="btn_BrokenArms.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xc1-Mn-sAU">
+                                                <rect key="frame" x="0.0" y="166" width="414" height="76"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.79525351519999998" alpha="1" colorSpace="deviceWhite"/>
+                                                <state key="normal" image="btn_Heat.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjt-Cy-nhD">
+                                                <rect key="frame" x="0.0" y="245" width="414" height="76"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.79525351519999998" alpha="1" colorSpace="deviceWhite"/>
+                                                <state key="normal" image="btn_Hardbreathe.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5B-xA-b1t">
+                                                <rect key="frame" x="0.0" y="324" width="414" height="76"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.79525351519999998" alpha="1" colorSpace="deviceWhite"/>
+                                                <state key="normal" image="btn_Facefreeze.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ra-Ce-1pF">
+                                                <rect key="frame" x="0.0" y="403" width="414" height="76"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.79525351519999998" alpha="1" colorSpace="deviceWhite"/>
+                                                <state key="normal" image="btn_Fireburn.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVi-rl-Ggf">
+                                                <rect key="frame" x="0.0" y="482" width="414" height="76"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.79525351519999998" alpha="1" colorSpace="deviceWhite"/>
+                                                <state key="normal" image="btn_Discahrge.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mq-8b-LSi">
+                                                <rect key="frame" x="0.0" y="561" width="414" height="76"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.79525351519999998" alpha="1" colorSpace="deviceWhite"/>
+                                                <state key="normal" image="btn_Head.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbT-w1-gVq">
+                                                <rect key="frame" x="0.0" y="640" width="414" height="76"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.79525351519999998" alpha="1" colorSpace="deviceWhite"/>
+                                                <state key="normal" image="btn_Chest.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="825" id="Ac3-vn-ZZc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="AKt-pz-bcb" firstAttribute="leading" secondItem="Mrq-9M-uVB" secondAttribute="leading" id="27d-3R-D8K"/>
+                                    <constraint firstItem="AKt-pz-bcb" firstAttribute="bottom" secondItem="Mrq-9M-uVB" secondAttribute="bottomMargin" id="6nx-vn-3EU"/>
+                                    <constraint firstItem="AKt-pz-bcb" firstAttribute="centerX" secondItem="Mrq-9M-uVB" secondAttribute="centerX" id="FZ3-1m-yH7"/>
+                                    <constraint firstItem="AKt-pz-bcb" firstAttribute="top" secondItem="Mrq-9M-uVB" secondAttribute="top" id="aTU-KN-yAF"/>
+                                    <constraint firstAttribute="trailing" secondItem="AKt-pz-bcb" secondAttribute="trailing" id="oXh-2X-JTg"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="בחר מאפיין" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iue-da-nbd">
+                                <rect key="frame" x="155.66666666666666" y="116" width="102.99999999999997" height="30"/>
+                                <fontDescription key="fontDescription" name="SegoeUI-Light" family="Segoe UI" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mrq-9M-uVB" firstAttribute="leading" secondItem="uKZ-ck-rSQ" secondAttribute="leading" id="0a6-im-dIw"/>
+                            <constraint firstItem="Mrq-9M-uVB" firstAttribute="leading" secondItem="OAd-YN-U1m" secondAttribute="leading" id="70Y-0V-IEL"/>
+                            <constraint firstItem="Mrq-9M-uVB" firstAttribute="centerX" secondItem="iue-da-nbd" secondAttribute="centerX" id="Eca-bz-dTE"/>
+                            <constraint firstItem="Mrq-9M-uVB" firstAttribute="top" secondItem="iue-da-nbd" secondAttribute="bottom" constant="30" id="FMF-Iu-gR8"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Mrq-9M-uVB" secondAttribute="bottom" constant="-9" id="KJe-F9-Dn5"/>
+                            <constraint firstItem="OAd-YN-U1m" firstAttribute="top" secondItem="uKZ-ck-rSQ" secondAttribute="top" id="KbU-Gy-EE1"/>
+                            <constraint firstItem="Mrq-9M-uVB" firstAttribute="trailing" secondItem="OAd-YN-U1m" secondAttribute="trailing" id="OeE-0P-jws"/>
+                            <constraint firstItem="Xsu-zI-8xS" firstAttribute="top" secondItem="XpR-ME-Bes" secondAttribute="top" constant="14" id="daX-Gr-gJZ"/>
+                            <constraint firstItem="Xsu-zI-8xS" firstAttribute="centerX" secondItem="uKZ-ck-rSQ" secondAttribute="centerX" id="eLT-FT-nOB"/>
+                            <constraint firstItem="Mrq-9M-uVB" firstAttribute="top" secondItem="uKZ-ck-rSQ" secondAttribute="top" constant="176" id="fAU-C0-uxa"/>
+                            <constraint firstItem="Mrq-9M-uVB" firstAttribute="centerX" secondItem="Xsu-zI-8xS" secondAttribute="centerX" id="gWk-cm-Nb3"/>
+                            <constraint firstItem="Xsu-zI-8xS" firstAttribute="leading" secondItem="XpR-ME-Bes" secondAttribute="leading" constant="157" id="kC2-nO-mm6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XpR-ME-Bes"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="btn_Func1" destination="nkk-mO-Vev" id="7eL-Oi-XLw"/>
+                        <segue destination="VSw-0k-PLs" kind="show" identifier="go_to_questions" id="Kum-gm-d8G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lKp-ME-Ogh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="24.456521739130437"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo_2.png" width="2000" height="746"/>
+        <image name="bkg_Top2_Short.png" width="414" height="91"/>
+        <image name="btn_BrokenArms.png" width="1080" height="202"/>
+        <image name="btn_Chest.png" width="1080" height="202"/>
+        <image name="btn_Discahrge.png" width="1080" height="202"/>
+        <image name="btn_Facefreeze.png" width="1080" height="202"/>
+        <image name="btn_Fireburn.png" width="1080" height="202"/>
+        <image name="btn_Hardbreathe.png" width="1080" height="202"/>
+        <image name="btn_Head.png" width="1080" height="202"/>
+        <image name="btn_Headache.png" width="1080" height="202"/>
+        <image name="btn_Heat.png" width="1080" height="202"/>
+    </resources>
+</document>
